@@ -31,11 +31,11 @@ class Program
             letter = "F";
         }
 
-        if ((percentInt % 10 >= 7) && (percentInt < 90) && (letter != "F"))
+        if ((percentInt % 10 >= 7) && (letter != "A") && (letter != "F"))
         {
             letter += "+";
         }
-        else if ((percentInt % 10 < 3) && (letter != "F"))
+        else if ((percentInt % 10 < 3) && (letter != "A") && (letter != "F"))
         {
             letter += "-";
         }
