@@ -1,3 +1,5 @@
+// The extra creattivity requirment that I have included is a monthly tracker for the user's journal entries.  It compares the month from today's DateTime to the DateTime of each saved entry as they are being displayed.  Then, if there are entries for this month it displays a message showing the user's progress for this month.
+
 using System;
 using System.IO;
 
