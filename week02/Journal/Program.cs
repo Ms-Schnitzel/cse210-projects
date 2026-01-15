@@ -15,7 +15,7 @@ class Program
         {
             Prompt newPrompt = new Prompt();
             Entry newEntry = new Entry();
-            Console.WriteLine("Please select one of the followig choices: ");
+            Console.WriteLine("Please select one of the following choices: ");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
             Console.WriteLine("3. Load");
