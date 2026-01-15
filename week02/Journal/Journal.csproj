@@ -8,4 +8,11 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+    <Copy SourceFiles="newPrompts.csv" DestinationFolder="$(OutDir)" />
+  </Target>
+  <Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
+    <Copy SourceFiles="newPrompts.csv" DestinationFolder="$(PublishDir)" />
+  </Target>
+
 </Project>
