@@ -3,7 +3,6 @@ public class Activity
   private string _name;
   private string _description;
   protected int _duration;
-  // private int _wellnessTime = 0;
 
   public Activity(string name, string description)
   {

@@ -1,13 +1,3 @@
-// Name
-// Description
-// Ask and Set Duration in Seconds
-// Prepare to Begin, pause 
-// 
-// Good Job, pause
-// Restate activity completed and length of time, pause
-// Finish activity
-// Pause shows animation
-
 public class BreathActivity : Activity
 {
   public BreathActivity(string name, string description) : base(name, description)
@@ -21,7 +11,6 @@ public class BreathActivity : Activity
     DateTime start = DateTime.Now;
     DateTime end = start.AddSeconds(_duration);
     int i = 4;
-    // int j = 4;
     while (DateTime.Now < end)
     {
       Console.Write("\nBreath in...");

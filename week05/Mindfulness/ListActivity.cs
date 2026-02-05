@@ -1,13 +1,3 @@
-// Name
-// Description
-// Ask and Set Duration in Seconds
-// Prepare to Begin, pause 
-// 
-// Good Job, pause
-// Restate activity completed and length of time, pause
-// Finish activity
-// Pause shows animation
-
 public class ListActivity : Activity
 {
   private int _count;
