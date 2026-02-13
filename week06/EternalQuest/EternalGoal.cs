@@ -1,19 +1,31 @@
 public class EternalGoal : Goal
 {
+  private string _name;
+  private string _description;
+  private int _points;
+  private int _count;
 
-  public EternalGoal(string name, string details, int points) : base(name, details, points)
-  {}
-
-  public override void RecordEvent()
-  { }
-
-  public override bool IsComplete()
+  public EternalGoal(string name, string description, int points) : base(name, description, points)
   {
-    return false;
+    _name = name;
+    _description = description;
+    _points = points;
+    _count = 0;
   }
-  
-  public override string GetDetailRep()
+
+  public override int RecordEvent()
   {
-    return "";
+    _count++;
+    return _points;
+  }
+
+  // public override bool IsComplete()
+  // {
+  //   return false;
+  // }
+  
+  public override string GetStringRep()
+  {
+    return $"Eternal:{_name},{_description},{_points},{_count}";
   }
 }
