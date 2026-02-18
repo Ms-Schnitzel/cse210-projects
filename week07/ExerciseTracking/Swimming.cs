@@ -22,6 +22,7 @@ public class Swimming : Activity
   public override double GetPace()
   {
     double pace = 60 / GetSpeed();
+    pace = Math.Round(pace, 2);
     return pace;
   }
 }
